@@ -3,7 +3,7 @@
 import os
 import sys
 
-from DjangoTutorial.djangotutorial.mysite.settings import DEBUG
+
 
 
 def main():

@@ -63,17 +63,3 @@ def roll_Nimble(x, y, vicious=False):
         print("Miss")
         return 0
     return soma
-
-def roll_witcher_1d10(base=0):
-    roll = roll_XdY(1, 10)
-    base += roll[0]
-    explode = roll_XdY_eZ(1, 10, 10)
-    if roll[0] == 10:
-        base += explode
-    elif roll[0] == 1:
-        base -= explode
-    return base
-    pass
-
-#print(roll_Nimble(4, 4, True))
-#print(roll_witcher_1d10(5))
